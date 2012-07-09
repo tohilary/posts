@@ -2,7 +2,7 @@
 - date: 2012-7-9
 
 ---
-以前都是用`self.request.headers['X-Real-Ip']`来取访客ip，最近翻源码才发现官方已经给获取好了:
+以前都是用`self.request.headers['X-Real-Ip']`来取访客ip，今天翻源码才发现官方已经给获取好了:
 ```python
         if connection and connection.xheaders:
             # Squid uses X-Forwarded-For, others use X-Real-Ip
