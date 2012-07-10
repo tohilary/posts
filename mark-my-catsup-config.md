@@ -3,62 +3,24 @@
 
 ----
 
-nginx.conf:
-```
-
-user  nginx;
-worker_processes  1;
-
-error_log  /var/log/nginx/error.log warn;
-pid        /var/run/nginx.pid;
-
-
-events {
-    worker_connections  1024;
-}
-
-
-http {
-    include       /etc/nginx/mime.types;
-    default_type  application/octet-stream;
-
-    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-                      '$status $body_bytes_sent "$http_referer" '
-                      '"$http_user_agent" "$http_x_forwarded_for"';
-
-    access_log  /var/log/nginx/access.log  main;
-
-    sendfile        on;
-    #tcp_nopush     on;
-
-    keepalive_timeout  65;
-
-    gzip  on;
-    gzip_disable "msie6";
-    gzip_proxied any;
-    gzip_types text/plain text/css text/xml application/x-javascript application/xml application/atom+xml text/javascript;  
-
-    include /etc/nginx/sites-available/*.conf;
-}
-
-```
-
 catsup.conf:
 ```
 upstream catsup_whtsky{
-    server localhost:8001;
-    server localhost:8002;
-    server localhost:8003;
-    server localhost:8004;
+    server localhost:2331;
 }
 server {
     server_name whouz.com;
+    client_max_body_size 1M;
 
     proxy_read_timeout 200;
     tcp_nopush on;
     gzip_min_length 1000;
     gzip_proxied any;
     proxy_next_upstream error;
+
+    if ($host != 'whouz.com' ) { 
+        rewrite  ^/(.*)$  http://whouz.com/$1  permanent; 
+    }
 
     listen 80;
 
@@ -73,4 +35,17 @@ server {
         proxy_pass http://catsup_whtsky;
     }
 }
-```
+
+server {
+    server_name assets.whouz.com;
+    gzip_min_length 1;
+    gzip_proxied any;
+
+    listen 80;
+
+    add_header Vary Accept-Encoding;
+    access_log   off;
+
+    root /web/catsup/themes/sealscript/static;
+    expires 30d;
+}```
