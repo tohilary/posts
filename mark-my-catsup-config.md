@@ -47,4 +47,5 @@ server {
 
     root /web/catsup/themes/sealscript/static;
     expires 30d;
-}```
+}
+```
