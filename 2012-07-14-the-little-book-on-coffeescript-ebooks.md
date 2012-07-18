@@ -7,7 +7,7 @@
 Minus:http://min.us/my2Hv0TMj 
 Dropbox:http://db.tt/xFLCorq5 
 
-最近突发奇想想学CoffeeScript了。。于是在豆瓣阅读上发现了《CoffeeScript小书》（http://read.douban.com/ebook/198648/），试读之后发现一个很坑的问题....
+最近突发奇想想学CoffeeScript了。。于是在豆瓣阅读上发现了《CoffeeScript小书》（ http://read.douban.com/ebook/198648/ ），试读之后发现一个很坑的问题....
 
 代码竟然是图片！！！！！！
 
