@@ -6,7 +6,7 @@
 凌晨12：30被Gmail的邮件通知吵醒了，打开一看之后发现是噩耗。
 恩，Sparrow被Google收购了。
 
-http://ww4.sinaimg.cn/large/a74ecc4cjw1dv3uqkwqeij.jpg
+![Email-Content](http://ww4.sinaimg.cn/large/a74ecc4cjw1dv3uqkwqeij.jpg)
 
 
 Sparrow一直是我很喜欢的Mail客户端，自从我换了Mac以来一直都在用它。不到两周前刚刚趁着冰点促销30元入了，谁知到……
