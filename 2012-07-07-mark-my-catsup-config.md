@@ -1,5 +1,6 @@
 #记录一下Catsup的Nginx设置
 - date: 2012-7-7
+- tags: catsup, nginx
 
 ----
 

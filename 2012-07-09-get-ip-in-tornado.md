@@ -1,5 +1,6 @@
 #在Tornado中获取访客ip
 - date: 2012-7-9
+- tags: tornado
 
 ---
 以前都是用`self.request.headers['X-Real-Ip']`来取访客ip，今天翻源码才发现官方已经给获取好了:

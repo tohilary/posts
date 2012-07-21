@@ -1,5 +1,6 @@
 # 《CoffeeScript小书》epub/mobi/pdf下载
 - date: 2012-7-14
+- tags: coffeescript, ebook
 
 ---
 

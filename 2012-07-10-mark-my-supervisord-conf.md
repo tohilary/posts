@@ -1,5 +1,6 @@
 #Mark一下目前的supervisord.conf
 - date: 2012-7-10
+- tags: supervisor
 
 ---
 

@@ -1,6 +1,7 @@
 # 测试Prose
 
 - date: 2012-7-11
+- tags: prose
 ---
 
 Prose是我刚发现的一个强悍的Github在线编辑器，网址在这里：http://prose.io/

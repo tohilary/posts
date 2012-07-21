@@ -1,5 +1,6 @@
 # 在Nginx上配置SSL
 - date: 2012-7-13
+- tags: nginx
 
 ----
 

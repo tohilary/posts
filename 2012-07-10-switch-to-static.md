@@ -1,5 +1,6 @@
 #whouz.com切换到纯静态化
 - date: 2012-7-10
+- tags: catsup, nginx
 
 ---
 

@@ -1,6 +1,6 @@
 #CoffeeScript学习笔记-1
 - date: 2012-7-21
-
+- tags: coffeescript
 -----
 
 基本上是给自己写的，所以会省略不少东西。
