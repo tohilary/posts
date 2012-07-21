@@ -74,7 +74,7 @@ and/or = &&/||
 f = -> arguments[0] == arguments[1] and arguments[1] != arguments[2] and arguments[2] is arguments[3]
 ```
 
-```
+```javascript
 $ coffee -p hello.coffee 
 (function() {
   var f;
