@@ -10,11 +10,11 @@
 `npm install -g coffee-script`
 加上`-g`会自动把这东西安成全局的。不加的话就会存到`./node_module`里面。
 
-在Mac下，需要把`export PATH=/usr/local/bin:$PATH` 加到 `~/.profile`里面。
+在OS X下，需要把`export PATH=/usr/local/bin:$PATH` 加到 `~/.profile`里面。
 
 ##基本操作
 直接运行：`coffee filename`
-查看编译后的js:`coffee -p filename`
+查看编译后的js：`coffee -p filename`
 编译：`coffee -c filename`
 目录编译：`coffee -co input output`
 目录监听编译：`coffee -cwo input output`
@@ -23,7 +23,7 @@
 CoffeeScript使用`->`或`=>`来定义函数。用缩进来区分函数/条件分支什么的。
 和Ruby相同，在有参数的情况下函数调用的括号可以省略；但是在没参数的情况下必须有括号，否则会返回函数对象。
 字符串插值的方法和Ruby一样，都是`#{var}`
-```cofffeescript
+```coffeescript
 hello = ->
 	"hello!"
 
@@ -74,7 +74,7 @@ and/or = &&/||
 f = -> arguments[0] == arguments[1] and arguments[1] != arguments[2] and arguments[2] is arguments[3]
 ```
 
-```shell
+```
 $ coffee -p hello.coffee 
 (function() {
   var f;
