@@ -79,7 +79,7 @@ OUTPUT:
 
 调用字典对象时，用点号和方括号都可以。`dict.key`与`dict[key]`是等价的.
 
-CoffeeScript中的切分方法和Ruby一样，三个点表示前开后闭，两个点表示前开后开；不支持像Python中负数那样的从后往前的切分方式。字符串也可以被切分。
+CoffeeScript中的切分方法和Ruby一样，三个点表示前开后闭，两个点表示前开后开；~~不支持像Python中负数那样的从后往前的切分方式~~。字符串也可以被切分。
 ```coffeescript
 coffee> [0...9]
 [ 0,
@@ -113,8 +113,8 @@ coffee> ints[0..2]
 [ 0, 1, 2 ]
 coffee> 'I love cats'[0..5]
 'I love'
-coffee> 'I love cats'[-1..-4]
-''
+coffee> 'I love cats'[-4..-1]
+'cats'
 ```
 
 ##?-存在操作符
