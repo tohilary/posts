@@ -1,5 +1,5 @@
 #Supervisor常用命令
-- date: 2012-7-10
+- tags: supervisor
 
 ---
 初始启动：`supervisord`
